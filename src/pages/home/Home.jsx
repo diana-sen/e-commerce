@@ -1,7 +1,14 @@
+import { useContext, useEffect } from 'react'
+import Item from '../../components/Item'
 
 const Home = () => {
   return (
-    <div>Home</div>
+
+    <div className='container'>
+      <div>
+        <Item />
+      </div>
+    </div>
   )
 }
 
