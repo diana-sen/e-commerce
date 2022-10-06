@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Item = () => {
+const Product = () => {
   return (
     <div>
       <div className='card border-secondary mb-3' style={{ maxWidth: '20rem' }}>
@@ -14,4 +14,4 @@ const Item = () => {
   )
 }
 
-export default Item
+export default Product
