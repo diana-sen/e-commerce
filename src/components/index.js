@@ -1,6 +1,6 @@
 import Header from './Header'
 import Footer from './Footer'
-import Product from './Product'
+import Product from './ProductCard'
 
 export {
   Header,

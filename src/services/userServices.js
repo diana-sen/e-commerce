@@ -5,15 +5,18 @@ const token = window.localStorage.getItem('token')
 const config = {
   headers: { Authorization: `JWT ${token}` }
 }
-// ambas funciones manejan bodies y son de tipo post
+
+// Users
 const registerUserService = (data) => axios.post(`${BASE_URL}/signup`, data)
-
 const loginUserService = (data) => axios.post(`${BASE_URL}/login`, data)
-
 const getDataUser = (id) => axios.get(`${BASE_URL}/user/{${id}`, config)
+
+// Products
+const getProducts = (data) => axios.get(`${BASE_URL}/item`, data)
 
 export {
   registerUserService,
   loginUserService,
-  getDataUser
+  getDataUser,
+  getProducts
 }
