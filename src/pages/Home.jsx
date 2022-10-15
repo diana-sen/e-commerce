@@ -11,7 +11,7 @@ const Home = () => {
       <div className='container center'>
         <div className='row'>
           {productData.products.map((item) => (
-            <ProductCard key={item?._id} id={item?._id} title={item?.product_name} image={item?.image} />
+            <ProductCard key={item?._id} id={item?._id} title={item?.product_name} image={item?.image} price={item?.price} />
           ))}
           <ProductCard />
         </div>
